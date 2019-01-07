@@ -35,6 +35,10 @@
     "informasibidangusaha": {
       "model": "informasibidangusaha",
       "via": "kabupaten"
+    },
+    "bumdesprofile": {
+      "model": "bumdesprofile",
+      "via": "kabupaten"
     }
   }
 }

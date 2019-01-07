@@ -30,6 +30,10 @@
     "informasibidangusaha": {
       "model": "informasibidangusaha",
       "via": "kelurahan"
+    },
+    "bumdesprofile": {
+      "model": "bumdesprofile",
+      "via": "kelurahan"
     }
   }
 }

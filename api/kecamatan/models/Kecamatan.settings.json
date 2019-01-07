@@ -34,6 +34,10 @@
     "informasibidangusaha": {
       "model": "informasibidangusaha",
       "via": "kecamatan"
+    },
+    "bumdesprofile": {
+      "model": "bumdesprofile",
+      "via": "kecamatan"
     }
   }
 }

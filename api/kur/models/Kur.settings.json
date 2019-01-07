@@ -20,10 +20,6 @@
       "model": "petani",
       "via": "kur"
     },
-    "bumdesprofile": {
-      "model": "bumdesprofile",
-      "via": "kur"
-    },
     "jenis_pembiayaan": {
       "default": "",
       "type": "string"

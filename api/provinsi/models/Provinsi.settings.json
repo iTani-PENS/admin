@@ -31,6 +31,10 @@
     "informasibidangusaha": {
       "model": "informasibidangusaha",
       "via": "provinsi"
+    },
+    "bumdesprofile": {
+      "model": "bumdesprofile",
+      "via": "provinsi"
     }
   }
 }

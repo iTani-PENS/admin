@@ -20,8 +20,20 @@
       "default": "",
       "type": "text"
     },
-    "kur": {
-      "model": "kur",
+    "provinsi": {
+      "model": "provinsi",
+      "via": "bumdesprofile"
+    },
+    "kabupaten": {
+      "model": "kabupaten",
+      "via": "bumdesprofile"
+    },
+    "kecamatan": {
+      "model": "kecamatan",
+      "via": "bumdesprofile"
+    },
+    "kelurahan": {
+      "model": "kelurahan",
       "via": "bumdesprofile"
     }
   }
