@@ -1,0 +1,93 @@
+{
+  "connection": "default",
+  "collectionName": "petanis",
+  "info": {
+    "name": "petani",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "id_petani": {
+      "default": "",
+      "unique": true,
+      "type": "integer",
+      "required": true
+    },
+    "nik": {
+      "default": "",
+      "type": "integer"
+    },
+    "nama_lengkap": {
+      "default": "",
+      "type": "string"
+    },
+    "nama_panggilan": {
+      "default": "",
+      "type": "string"
+    },
+    "tempat_lahir": {
+      "default": "",
+      "type": "string"
+    },
+    "tanggal_lahir": {
+      "default": "",
+      "type": "date"
+    },
+    "jenis_kelamin": {
+      "default": "",
+      "type": "enumeration",
+      "enum": [
+        "pria",
+        "wanita"
+      ]
+    },
+    "nomor_npwp": {
+      "default": "",
+      "type": "integer"
+    },
+    "alamat": {
+      "default": "",
+      "type": "text"
+    },
+    "provinsi": {
+      "model": "provinsi",
+      "via": "petanis"
+    },
+    "kabupaten": {
+      "model": "kabupaten",
+      "via": "petanis"
+    },
+    "kelurahan": {
+      "model": "kelurahan",
+      "via": "petanis"
+    },
+    "kecamatan": {
+      "model": "kecamatan",
+      "via": "petanis"
+    },
+    "kodepos": {
+      "default": "",
+      "type": "integer"
+    },
+    "nomor_telpon": {
+      "default": "",
+      "type": "integer"
+    },
+    "informasibidangusaha": {
+      "model": "informasibidangusaha",
+      "via": "petani"
+    },
+    "kur": {
+      "model": "kur",
+      "via": "petani"
+    },
+    "neraca": {
+      "model": "neraca",
+      "via": "petani"
+    }
+  }
+}

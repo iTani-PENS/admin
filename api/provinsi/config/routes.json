@@ -1,0 +1,76 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/provinsis",
+      "handler": "Provinsi.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/provinsis/count",
+      "handler": "Provinsi.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/provinsis/:id",
+      "handler": "Provinsi.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/provinsis",
+      "handler": "Provinsi.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/provinsis/:id",
+      "handler": "Provinsi.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/provinsis/:id",
+      "handler": "Provinsi.destroy",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/provinsis/:id/relationships/:relation",
+      "handler": "Provinsi.createRelation",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/provinsis/:id/relationships/:relation",
+      "handler": "Provinsi.updateRelation",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/provinsis/:id/relationships/:relation",
+      "handler": "Provinsi.destroyRelation",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

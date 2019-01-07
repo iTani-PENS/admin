@@ -1,0 +1,76 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/kurs",
+      "handler": "Kur.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/kurs/count",
+      "handler": "Kur.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/kurs/:id",
+      "handler": "Kur.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/kurs",
+      "handler": "Kur.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/kurs/:id",
+      "handler": "Kur.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/kurs/:id",
+      "handler": "Kur.destroy",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/kurs/:id/relationships/:relation",
+      "handler": "Kur.createRelation",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/kurs/:id/relationships/:relation",
+      "handler": "Kur.updateRelation",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/kurs/:id/relationships/:relation",
+      "handler": "Kur.destroyRelation",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

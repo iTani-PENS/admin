@@ -1,0 +1,76 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/kabupatens",
+      "handler": "Kabupaten.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/kabupatens/count",
+      "handler": "Kabupaten.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/kabupatens/:id",
+      "handler": "Kabupaten.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/kabupatens",
+      "handler": "Kabupaten.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/kabupatens/:id",
+      "handler": "Kabupaten.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/kabupatens/:id",
+      "handler": "Kabupaten.destroy",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/kabupatens/:id/relationships/:relation",
+      "handler": "Kabupaten.createRelation",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/kabupatens/:id/relationships/:relation",
+      "handler": "Kabupaten.updateRelation",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/kabupatens/:id/relationships/:relation",
+      "handler": "Kabupaten.destroyRelation",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

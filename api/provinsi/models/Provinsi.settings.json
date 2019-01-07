@@ -1,0 +1,36 @@
+{
+  "connection": "default",
+  "collectionName": "provinsis",
+  "info": {
+    "name": "provinsi",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "id_provinsi": {
+      "default": "",
+      "type": "integer",
+      "required": true
+    },
+    "nama_provinsi": {
+      "default": "",
+      "type": "string"
+    },
+    "kabupatens": {
+      "collection": "kabupaten",
+      "via": "provinsi"
+    },
+    "petanis": {
+      "collection": "petani",
+      "via": "provinsi"
+    },
+    "informasibidangusaha": {
+      "model": "informasibidangusaha",
+      "via": "provinsi"
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/neracas",
+      "handler": "Neraca.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/neracas/count",
+      "handler": "Neraca.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/neracas/:id",
+      "handler": "Neraca.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/neracas",
+      "handler": "Neraca.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/neracas/:id",
+      "handler": "Neraca.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/neracas/:id",
+      "handler": "Neraca.destroy",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/neracas/:id/relationships/:relation",
+      "handler": "Neraca.createRelation",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/neracas/:id/relationships/:relation",
+      "handler": "Neraca.updateRelation",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/neracas/:id/relationships/:relation",
+      "handler": "Neraca.destroyRelation",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

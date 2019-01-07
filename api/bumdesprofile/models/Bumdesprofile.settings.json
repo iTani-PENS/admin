@@ -1,0 +1,28 @@
+{
+  "connection": "default",
+  "collectionName": "bumdesprofiles",
+  "info": {
+    "name": "bumdesprofile",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "id_bumdes": {
+      "default": "",
+      "type": "integer",
+      "required": true
+    },
+    "alamat": {
+      "default": "",
+      "type": "text"
+    },
+    "kur": {
+      "model": "kur",
+      "via": "bumdesprofile"
+    }
+  }
+}

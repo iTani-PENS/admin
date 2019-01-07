@@ -1,0 +1,76 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/kecamatans",
+      "handler": "Kecamatan.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/kecamatans/count",
+      "handler": "Kecamatan.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/kecamatans/:id",
+      "handler": "Kecamatan.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/kecamatans",
+      "handler": "Kecamatan.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/kecamatans/:id",
+      "handler": "Kecamatan.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/kecamatans/:id",
+      "handler": "Kecamatan.destroy",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/kecamatans/:id/relationships/:relation",
+      "handler": "Kecamatan.createRelation",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/kecamatans/:id/relationships/:relation",
+      "handler": "Kecamatan.updateRelation",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/kecamatans/:id/relationships/:relation",
+      "handler": "Kecamatan.destroyRelation",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

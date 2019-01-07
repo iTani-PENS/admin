@@ -1,0 +1,87 @@
+{
+  "connection": "default",
+  "collectionName": "informasibidangusahas",
+  "info": {
+    "name": "informasibidangusaha",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "id_informasi": {
+      "default": "",
+      "type": "integer"
+    },
+    "petani": {
+      "model": "petani",
+      "via": "informasibidangusaha"
+    },
+    "nama_usaha": {
+      "default": "",
+      "type": "string"
+    },
+    "bidang_usaha": {
+      "default": "",
+      "type": "string"
+    },
+    "berdiri_sejak": {
+      "default": "",
+      "type": "date"
+    },
+    "jenis_perijinan": {
+      "default": "",
+      "type": "string"
+    },
+    "nomor_perjanjian": {
+      "default": "",
+      "type": "integer"
+    },
+    "tanggal_perijinan": {
+      "default": "",
+      "type": "date"
+    },
+    "sektor_ekonomi": {
+      "default": "",
+      "type": "string"
+    },
+    "sub_sektor_ekonomi": {
+      "default": "",
+      "type": "string"
+    },
+    "alamat": {
+      "default": "",
+      "type": "text"
+    },
+    "provinsi": {
+      "model": "provinsi",
+      "via": "informasibidangusaha"
+    },
+    "kabupaten": {
+      "model": "kabupaten",
+      "via": "informasibidangusaha"
+    },
+    "kelurahan": {
+      "model": "kelurahan",
+      "via": "informasibidangusaha"
+    },
+    "kecamatan": {
+      "model": "kecamatan",
+      "via": "informasibidangusaha"
+    },
+    "kodepos": {
+      "default": "",
+      "type": "integer"
+    },
+    "nomor_telpon": {
+      "default": "",
+      "type": "integer"
+    },
+    "kur": {
+      "model": "kur",
+      "via": "informasibidangusaha"
+    }
+  }
+}

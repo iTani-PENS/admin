@@ -1,0 +1,76 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/informasibidangusahas",
+      "handler": "Informasibidangusaha.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/informasibidangusahas/count",
+      "handler": "Informasibidangusaha.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/informasibidangusahas/:id",
+      "handler": "Informasibidangusaha.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/informasibidangusahas",
+      "handler": "Informasibidangusaha.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/informasibidangusahas/:id",
+      "handler": "Informasibidangusaha.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/informasibidangusahas/:id",
+      "handler": "Informasibidangusaha.destroy",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/informasibidangusahas/:id/relationships/:relation",
+      "handler": "Informasibidangusaha.createRelation",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/informasibidangusahas/:id/relationships/:relation",
+      "handler": "Informasibidangusaha.updateRelation",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/informasibidangusahas/:id/relationships/:relation",
+      "handler": "Informasibidangusaha.destroyRelation",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

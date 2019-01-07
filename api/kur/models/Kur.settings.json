@@ -1,0 +1,84 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "kur",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "id_kur": {
+      "default": "",
+      "type": "integer",
+      "required": true
+    },
+    "petani": {
+      "model": "petani",
+      "via": "kur"
+    },
+    "bumdesprofile": {
+      "model": "bumdesprofile",
+      "via": "kur"
+    },
+    "jenis_pembiayaan": {
+      "default": "",
+      "type": "string"
+    },
+    "maksimal_permohonan": {
+      "default": "",
+      "type": "integer"
+    },
+    "keperluan_pengajuan": {
+      "default": "",
+      "type": "string"
+    },
+    "jangka_waktu": {
+      "default": "",
+      "type": "integer"
+    },
+    "jenis_peminjaman": {
+      "default": "",
+      "type": "string"
+    },
+    "informasibidangusaha": {
+      "model": "informasibidangusaha",
+      "via": "kur"
+    },
+    "dokumen_apik": {
+      "default": "",
+      "type": "string"
+    },
+    "penghasilan_perbulan": {
+      "default": "",
+      "type": "integer"
+    },
+    "biaya_belanja_perbulan": {
+      "default": "",
+      "type": "integer"
+    },
+    "status_tempat_usaha": {
+      "default": "",
+      "type": "string"
+    },
+    "tanggungan_anak_sekolah": {
+      "default": "",
+      "type": "string"
+    },
+    "nominal_tanggungan_anak": {
+      "default": "",
+      "type": "integer"
+    },
+    "pendapatan_lain": {
+      "default": "",
+      "type": "string"
+    },
+    "nominal_pendapatan": {
+      "default": "",
+      "type": "integer"
+    }
+  }
+}

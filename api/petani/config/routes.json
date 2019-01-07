@@ -1,0 +1,76 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/petanis",
+      "handler": "Petani.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/petanis/count",
+      "handler": "Petani.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/petanis/:id",
+      "handler": "Petani.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/petanis",
+      "handler": "Petani.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/petanis/:id",
+      "handler": "Petani.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/petanis/:id",
+      "handler": "Petani.destroy",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/petanis/:id/relationships/:relation",
+      "handler": "Petani.createRelation",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/petanis/:id/relationships/:relation",
+      "handler": "Petani.updateRelation",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/petanis/:id/relationships/:relation",
+      "handler": "Petani.destroyRelation",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

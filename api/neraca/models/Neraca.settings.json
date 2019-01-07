@@ -1,0 +1,53 @@
+{
+  "connection": "default",
+  "collectionName": "neracas",
+  "info": {
+    "name": "neraca",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "id_neraca": {
+      "default": "",
+      "unique": true,
+      "type": "integer",
+      "required": true
+    },
+    "petani": {
+      "model": "petani",
+      "via": "neraca"
+    },
+    "saldo_kas": {
+      "default": "",
+      "type": "integer"
+    },
+    "piutang": {
+      "default": "",
+      "type": "integer"
+    },
+    "persediaan_bahan_baku": {
+      "default": "",
+      "type": "string"
+    },
+    "harga_tetap": {
+      "default": "",
+      "type": "string"
+    },
+    "hutang_ke_pemasok_bahan_baku": {
+      "default": "",
+      "type": "string"
+    },
+    "memiliki_hutang_ke_bank_lain": {
+      "default": "",
+      "type": "string"
+    },
+    "modal_awal": {
+      "default": "",
+      "type": "integer"
+    }
+  }
+}

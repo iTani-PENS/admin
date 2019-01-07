@@ -1,0 +1,35 @@
+{
+  "connection": "default",
+  "collectionName": "kelurahans",
+  "info": {
+    "name": "kelurahan",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "id_kelurahan": {
+      "default": "",
+      "type": "integer"
+    },
+    "kecamatan": {
+      "model": "kecamatan",
+      "via": "kelurahans"
+    },
+    "nama_kelurahan": {
+      "default": "",
+      "type": "string"
+    },
+    "petanis": {
+      "collection": "petani",
+      "via": "kelurahan"
+    },
+    "informasibidangusaha": {
+      "model": "informasibidangusaha",
+      "via": "kelurahan"
+    }
+  }
+}

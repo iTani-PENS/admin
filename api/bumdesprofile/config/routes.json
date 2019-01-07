@@ -1,0 +1,76 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/bumdesprofiles",
+      "handler": "Bumdesprofile.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bumdesprofiles/count",
+      "handler": "Bumdesprofile.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bumdesprofiles/:id",
+      "handler": "Bumdesprofile.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/bumdesprofiles",
+      "handler": "Bumdesprofile.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/bumdesprofiles/:id",
+      "handler": "Bumdesprofile.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/bumdesprofiles/:id",
+      "handler": "Bumdesprofile.destroy",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/bumdesprofiles/:id/relationships/:relation",
+      "handler": "Bumdesprofile.createRelation",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/bumdesprofiles/:id/relationships/:relation",
+      "handler": "Bumdesprofile.updateRelation",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/bumdesprofiles/:id/relationships/:relation",
+      "handler": "Bumdesprofile.destroyRelation",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

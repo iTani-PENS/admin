@@ -1,0 +1,76 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/kelurahans",
+      "handler": "Kelurahan.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/kelurahans/count",
+      "handler": "Kelurahan.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/kelurahans/:id",
+      "handler": "Kelurahan.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/kelurahans",
+      "handler": "Kelurahan.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/kelurahans/:id",
+      "handler": "Kelurahan.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/kelurahans/:id",
+      "handler": "Kelurahan.destroy",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/kelurahans/:id/relationships/:relation",
+      "handler": "Kelurahan.createRelation",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/kelurahans/:id/relationships/:relation",
+      "handler": "Kelurahan.updateRelation",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/kelurahans/:id/relationships/:relation",
+      "handler": "Kelurahan.destroyRelation",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

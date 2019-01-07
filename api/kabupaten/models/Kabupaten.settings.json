@@ -1,0 +1,40 @@
+{
+  "connection": "default",
+  "collectionName": "kabupatens",
+  "info": {
+    "name": "kabupaten",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "id_kabupaten": {
+      "default": "",
+      "type": "integer",
+      "required": true
+    },
+    "provinsi": {
+      "model": "provinsi",
+      "via": "kabupatens"
+    },
+    "nama_kabupaten": {
+      "default": "",
+      "type": "string"
+    },
+    "kecamatans": {
+      "collection": "kecamatan",
+      "via": "kabupaten"
+    },
+    "petanis": {
+      "collection": "petani",
+      "via": "kabupaten"
+    },
+    "informasibidangusaha": {
+      "model": "informasibidangusaha",
+      "via": "kabupaten"
+    }
+  }
+}
